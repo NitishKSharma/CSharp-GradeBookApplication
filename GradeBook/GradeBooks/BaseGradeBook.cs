@@ -113,35 +113,35 @@ namespace GradeBook.GradeBooks
       {
         case 'A':
           {
-            if (IsWeighted)
+            if (IsWeighted && (studentType == StudentType.DualEnrolled || studentType == StudentType.Honors))
               return 5;
             else
               return 4;
           }
         case 'B':
           {
-            if (IsWeighted)
+            if (IsWeighted && (studentType == StudentType.DualEnrolled || studentType == StudentType.Honors))
               return 4;
             else
               return 3;
           }
         case 'C':
           {
-            if (IsWeighted)
+            if (IsWeighted && (studentType == StudentType.DualEnrolled || studentType == StudentType.Honors))
               return 3;
             else
               return 2;
           }
         case 'D':
           {
-            if (IsWeighted)
+            if (IsWeighted && (studentType == StudentType.DualEnrolled || studentType == StudentType.Honors))
               return 2;
             else
               return 1;
           }
         case 'F':
           {
-            if (IsWeighted)
+            if (IsWeighted && (studentType == StudentType.DualEnrolled || studentType == StudentType.Honors))
               return 1;
             else
               return 0;
